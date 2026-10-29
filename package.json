@@ -1,0 +1,25 @@
+{
+  "name": "campusvault",
+  "version": "1.0.0",
+  "description": "CampusVault - Autonomous MERN platform to unlock underused equipment and spaces across campus makerspaces and labs",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "node server/index.js",
+    "start:server": "npm run start --prefix server",
+    "start:client": "npm run dev --prefix client",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test:e2e": "node server/scripts/smokeTest.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "campusvault",
+    "makerspace",
+    "equipment-sharing",
+    "fair-share",
+    "mern"
+  ],
+  "author": "CampusVault Team",
+  "license": "MIT"
+}

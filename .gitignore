@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Environment variables & secrets (CRITICAL: never commit .env)
+.env
+.env.*
+server/.env
+server/.env.*
+client/.env
+client/.env.*
+*.env
+
+# Local database data & binaries
+server/data/
+*.sock
+*.lock
+
+# Build artifacts
+dist/
+client/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
